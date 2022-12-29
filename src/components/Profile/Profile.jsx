@@ -1,10 +1,9 @@
-// import css from 'components/Profile/Profile'
 import PropTypes from 'prop-types';
 
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
     return (
-<div className='profile'>
+        <div className='css.profile'>
     <div className="description">
         <img
                 src={avatar}

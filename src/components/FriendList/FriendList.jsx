@@ -8,7 +8,10 @@ export const FriendList = ({ friends }) => {
     return (
         <ul className="friend-list">
             {friends.map(friend => <FriendListItem id={friend.id} avatar={friend.avatar} name={friend.name} isOnline={friend.isOnline} /> )}
-           
-       </ul>
+        </ul>
     )
+}
+
+FriendList.prototype = {
+   friends:PropTypes.array, 
 }

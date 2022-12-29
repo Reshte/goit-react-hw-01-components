@@ -19,7 +19,7 @@ export const App = ({title}) => {
         alignItems: 'center',
         gap : '20px',
         fontSize: 40,
-        flexwrap: wrap,
+        flexWrap: "wrap",
         color: '#010101'
       }}
     >
