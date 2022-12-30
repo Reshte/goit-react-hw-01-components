@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <div
       style={{
-        height: '200vh',
+        height: '250vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -24,6 +24,7 @@ export const App = () => {
         fontWeight: '100',
         fontSize: '24px',
         backgroundColor: 'grey',
+        padding:'50px'
              }}
     >
      <Profile

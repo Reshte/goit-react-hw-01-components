@@ -10,5 +10,11 @@ color:white;
 height:70px;
 `
 export const TableHeadString = styled.tr``
-export const TableHeadColom = styled.th``
-export const TableBody = styled.tbody``
+
+export const TableBody = styled.tbody`   
+ text-align: center;
+ `
+
+export const TableColom = styled.td`
+padding: 10px;
+border-right: 1px solid grey;` 
