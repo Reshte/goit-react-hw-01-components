@@ -9,7 +9,7 @@ import friends from "../friends.json"
 import transactions from '../transactions.json';
 
 
-export const App = ({title}) => {
+export const App = ({title ="upload stats"}) => {
   return (
     <div
       style={{
@@ -20,8 +20,11 @@ export const App = ({title}) => {
         gap : '20px',
         fontSize: 40,
         flexWrap: "wrap",
-        color: '#010101'
-      }}
+        color: '#010101',
+        fontFamily: 'Roboto',
+        fontWeight: '100',
+        backgroundColor: 'grey',
+             }}
     >
      <Profile
   username={user.username}
@@ -31,7 +34,7 @@ export const App = ({title}) => {
   stats={user.stats}
       />
 
-  {title ? <Statistics title="{title}" stats={data} /> : <Statistics stats={data} />}
+  {title ? <Statistics title={title} stats={data} /> : <Statistics stats={data} />}
       
       <FriendList friends={friends} />
       
