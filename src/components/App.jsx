@@ -9,20 +9,20 @@ import friends from "../friends.json"
 import transactions from '../transactions.json';
 
 
-export const App = ({title ="upload stats"}) => {
+export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        height: '200vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        gap : '20px',
-        fontSize: 40,
-        flexWrap: "wrap",
+        gap: '20px',
+        flexDirection: 'column',
         color: '#010101',
         fontFamily: 'Roboto',
         fontWeight: '100',
+        fontSize: '24px',
         backgroundColor: 'grey',
              }}
     >
@@ -34,7 +34,8 @@ export const App = ({title ="upload stats"}) => {
   stats={user.stats}
       />
 
-  {title ? <Statistics title={title} stats={data} /> : <Statistics stats={data} />}
+  
+      <Statistics title="upload stats" stats={data} /> 
       
       <FriendList friends={friends} />
       
