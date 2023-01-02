@@ -9,7 +9,9 @@ background-color: #80A6FF;
 color:white;
 height:70px;
 `
-export const TableHeadString = styled.tr``
+export const TableString = styled.tr`
+background-color:${props =>{return( props.number % 2? '#BEBEBE':'grey' )}}
+`
 
 export const TableBody = styled.tbody`   
  text-align: center;
