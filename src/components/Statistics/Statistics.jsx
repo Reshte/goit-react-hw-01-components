@@ -6,8 +6,8 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-console.log(getRandomHexColor())
 export const Statistics = ({ title, stats }) => {
+  console.log(stats)
      return(
 <Section>
   {title && <Title>{title}</Title>}
@@ -22,7 +22,7 @@ export const Statistics = ({ title, stats }) => {
 </Section>
 )}
 
-Statistics.propTypes ={
+Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array.isRequired
+  stats:PropTypes.array.isRequired,
 }

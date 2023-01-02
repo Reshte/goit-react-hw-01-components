@@ -13,8 +13,8 @@ export const TransactionHistory = ({ items }) => {
       </TableHead>
        <TableBody >
         {items.map((item, index) => {
-          console.log(index)
-          return (
+          console.log(items)
+           return (
             <TableString number={index} key={item.id}>
             <TableColom>{item.type}</TableColom>
             <TableColom>{item.amount}</TableColom>
@@ -27,7 +27,7 @@ export const TransactionHistory = ({ items }) => {
 }
 
 TransactionHistory.propTypes = {
-  items: PropTypes.shape({
+  items: PropTypes.arrayOf({
     id: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
     amount: PropTypes.string.isRequired,

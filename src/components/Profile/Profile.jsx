@@ -3,7 +3,7 @@ import { WrapperProfile, Description, Img, Name, Tag, Location, StatList, StatIt
 
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
-    return (
+      return (
         <WrapperProfile>
         <Description >
         <Img
@@ -40,6 +40,6 @@ Profile.propTypes = {
     stats: PropTypes.exact({
         followers: PropTypes.number.isRequired,
         views: PropTypes.number.isRequired,
-         likes: PropTypes.number.isRequired,
+        likes: PropTypes.number.isRequired,
     })
 }
