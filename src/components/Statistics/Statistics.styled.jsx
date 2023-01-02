@@ -37,9 +37,10 @@ color:orange;
 `
 
 export const Label = styled.span`
-color:black;
+color:white;
 `
 
 export const Percentage = styled.span`
-color:black;
+color:white;
+fontSize: 30px;
 `

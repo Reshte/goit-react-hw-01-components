@@ -40,7 +40,6 @@ background-color:  #e9e9e9;
 border-radius:  0 0 10px 10px;`
 
 export const StatItem = styled.li`
-// flex-basis: 50px;
 width:200px;
 display: flex;
 flex-direction: column;
@@ -49,8 +48,9 @@ gap:10px;
 padding: 20px;
 border-right: 1px solid black;
 
-last-child:
-border-right: none;`
+:last-child{
+border-right: none;
+};`
 
 
 export const StatLabel = styled.span`
