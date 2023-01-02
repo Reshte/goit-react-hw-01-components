@@ -7,8 +7,7 @@ function getRandomHexColor() {
 }
 
 export const Statistics = ({ title, stats }) => {
-  console.log(stats)
-     return(
+      return(
 <Section>
   {title && <Title>{title}</Title>}
     <List>
